@@ -1,4 +1,7 @@
 /* eslint-disable no-undef */
+import GameBoard from "./Gameboard";
+import { useState } from "react";
+
 function Game() {
     const [history, setHistory] = useState([Array(9).fill(null)]);
     const [currentMove, setCurrentMove] = useState(0);
@@ -32,7 +35,7 @@ function Game() {
     return (
       <div className="game">
         <div className="game-board">
-          <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
+          <GameBoard xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
         </div>
         <div className="game-info">
           <ol>{moves}</ol>
@@ -40,4 +43,6 @@ function Game() {
       </div>
     );
   }
+
+  export default Game;
   

@@ -1,7 +1,21 @@
 :root{
-  --theme: rgb(25, 25, 70);
+  --theme: #213547;
 }
 
 body{
   background-color: var(--theme);
+}
+
+.game{
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+.square{
+  width: 100px;
+  height: 100px;
 }
