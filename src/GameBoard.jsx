@@ -1,9 +1,10 @@
 /* eslint-disable react/prop-types */
-import { useState } from 'react';
 import Square from './Square';
+import useCalculateWinner from './hooks/useCalculateWinner';
 
-
-function Board({ xIsNext, squares, onPlay }) {
+function GameBoard({ xIsNext, squares, onPlay }) {
+  const calculateWinner = useCalculateWinner();
+  
   function handleClick(i) {
     if (calculateWinner(squares) || squares[i]) {
       return;
@@ -46,3 +47,5 @@ function Board({ xIsNext, squares, onPlay }) {
     </>
   );
 }
+
+export default GameBoard;
