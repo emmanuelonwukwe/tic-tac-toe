@@ -1,8 +1,15 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+To make a move, the player will use the mouse single click to mark a space. In this version, there is no provision to undo the move. As soon as the move is done, the game proceeds to the next player’s chance.
+At each move, The game will show whose move (Player A(X) or Player B(O)) it is. When the game ends, it displays one of the following three outcomes:
+Winner: Player A
+Winner: Player B
+Draw
 
-Currently, two official plugins are available:
+The creators are:
+Emmanuel, Tolu and Bivan.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Clone the repo from github and open in your visual studio
+Run the program the way you will run any react code from the command line.
+
+Credits to stacktrek and Afried for giving us the opportunity to work on this project.
