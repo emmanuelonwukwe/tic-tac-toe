@@ -33,14 +33,17 @@ function Game() {
     });
   
     return (
-      <div className="game">
-        <div className="game-board">
-          <GameBoard xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
+      <>
+        <h1 id="game-title">Play Tic tac toe</h1>
+        <div className="game">
+          <div className="game-board">
+            <GameBoard xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
+          </div>
+          <div className="game-info">
+            <ol>{moves}</ol>
+          </div>
         </div>
-        <div className="game-info">
-          <ol>{moves}</ol>
-        </div>
-      </div>
+      </>
     );
   }
 
