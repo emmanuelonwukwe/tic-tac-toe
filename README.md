@@ -10,6 +10,6 @@ The creators are:
 Emmanuel, Tolu and Bivan.
 
 Clone the repo from github and open in your visual studio
-Run from the command line
+Run the program the way you will run any react code from the command line.
 
-Credits to stacktrek and Afried for giving us the opportunity to work on a project like this
+Credits to stacktrek and Afried for giving us the opportunity to work on this project.
